@@ -33,7 +33,6 @@ const FlightCard = ({ flight }) => {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Animated border effect */}
         <div 
           className={`card__border absolute -z-10 top-1/2 left-1/2 
           -translate-x-1/2 -translate-y-1/2 w-[calc(100%+2px)] h-[calc(100%+2px)] 
@@ -42,7 +41,6 @@ const FlightCard = ({ flight }) => {
           ${isHovered ? 'opacity-100 scale-105' : 'opacity-70'}`}
         />
 
-        {/* Card Content */}
         <div>
           <div className="card_title__container mb-2">
             <h3 className="card_title text-sm sm:text-base text-white font-bold">{flight.airline}</h3>

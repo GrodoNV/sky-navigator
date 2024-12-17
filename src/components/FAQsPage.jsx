@@ -1,6 +1,7 @@
-import React from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
+import React from "react";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Carousel from "./Carousel";
 
 const FAQsPage = () => {
   const faqs = [
@@ -11,15 +12,23 @@ const FAQsPage = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gray-900 text-white">
       <Navbar />
-      <main className="flex-grow container mx-auto py-8">
-        <h1 className="text-3xl font-bold mb-6">Preguntas Frecuentes</h1>
-        <div className="space-y-6">
+      <main className="flex-grow container mx-auto py-8 px-4">
+        <h1 className="text-4xl font-extrabold text-center mb-10">Preguntas Frecuentes</h1>
+
+        {/* Carrusel */}
+        <Carousel />
+
+        {/* Preguntas Frecuentes */}
+        <div className="space-y-6 mt-10">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-white shadow-md rounded-lg p-6">
-              <h2 className="text-xl font-semibold mb-2">{faq.question}</h2>
-              <p>{faq.answer}</p>
+            <div
+              key={index}
+              className="bg-gray-800 shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow"
+            >
+              <h2 className="text-2xl font-bold mb-4">{faq.question}</h2>
+              <p className="text-gray-300">{faq.answer}</p>
             </div>
           ))}
         </div>
@@ -30,4 +39,3 @@ const FAQsPage = () => {
 };
 
 export default FAQsPage;
-
