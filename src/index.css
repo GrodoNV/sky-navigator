@@ -455,3 +455,14 @@ ul {
 .example-2 .icon-content a[data-social="youtube"] ~ .tooltip {
   background-color: #ff0000;
 }
+.checkbox-wrapper-10 {
+  position: relative;
+  display: inline-block;
+}
+
+.tgl {
+  display: none; /* Ocultar el checkbox */
+}
+
+
+
