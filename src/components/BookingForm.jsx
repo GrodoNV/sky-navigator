@@ -80,7 +80,7 @@ const BookingForm = ({ onClose }) => {
   if (isSuccess) {
     return (
       <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 p-4">
-        <div className="w-full gap-6 bg-gray-800 rounded-lg ">
+        <div className="mensaje-reserva w-full gap-6 bg-gray-800 rounded-lg ">
           <h2 className="text-white text-center pt-4 font-semibold text-lg mb-3">
             ¡Reserva Exitosa!
           </h2>

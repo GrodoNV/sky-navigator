@@ -48,10 +48,10 @@ const HomePage = () => {
             {showSearchForm && <SearchForm onClose={handleCloseSearchForm} onSearch={handleSearch} />}
             {isFormExpanded && (
               <div className="py-20">
-                <div className="flex justify-center mb-10">
+                <div className="flex justify-center mb-10 ">
                 <button 
   onClick={toggleFlightList} 
-  className="bg-transparent border border-purple-950 text-white hover:bg-purple-900 hover:text-yellow-400 px-15 py-3 rounded-full shadow-lg transition-all duration-300"
+  className="w-[85%] bg-transparent border border-purple-950 text-white hover:bg-purple-900 hover:text-yellow-400 px-15 py-3 rounded-full shadow-lg transition-all duration-300"
 >
   {isFlightListVisible ? 'Ocultar Vuelos' : 'Mostrar Vuelos'}
 </button>

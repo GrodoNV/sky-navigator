@@ -116,6 +116,9 @@
     box-sizing: border-box;
     border-radius: 16px;
   }
+  .mensaje-reserva{
+    width: 400px;
+  }
   
   .form-container button:active {
     scale: 0.95;

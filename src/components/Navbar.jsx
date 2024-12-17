@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="absolute top-0 left-0 right-0 z-50 border-white/20 shadow-xl ">
+    <nav className="absolute top-0 left-0 right-0 z-50  ">
       <div
         className={`flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 py-4 max-w-[500px] mx-auto ${
           isExpanded ? 'w-full' : 'w-16 sm:w-20 md:w-24 lg:w-28'
