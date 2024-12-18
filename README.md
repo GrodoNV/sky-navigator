@@ -10,20 +10,21 @@ Actualmente, se encuentran disponibles dos plugins oficiales:
 ---
 
 ## Requisitos previos
->[!NOTE]
+>[!IMPORTANT]
 >Antes de comenzar, asegúrate de tener instalados los siguientes herramientas:
-
-
-1. **Node.js**: Vite requiere Node.js para ejecutarse.
-   - Descarga e instala [Node.js](https://nodejs.org/).
-2. **npm**: La gestión de paquetes viene con Node.js.
+>1. **Node.js**: Vite requiere Node.js para ejecutarse.
+>   - Descarga e instala [Node.js](https://nodejs.org/).
+>2. **npm**: La gestión de paquetes viene con Node.js.
 
 ---
 
 ## Instrucciones de instalación
+>[!TIP]
+>1. **Clonar el repositorio**:
 
-1. **Clonar el repositorio**:
+>   ```bash
+>   git clone https://tu-repo-url.git
+>   cd tu-nombre-proyecto
 
-   ```bash
-   git clone https://tu-repo-url.git
-   cd tu-nombre-proyecto
+>[!NOTE]
+>Agradecimiento a UIverse , MagicUi y Shadcn

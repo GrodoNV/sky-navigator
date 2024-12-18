@@ -21,7 +21,7 @@ const FAQsPage = () => {
     <div className="min-h-screen flex flex-col bg-gray-900 text-white">
       <Navbar />
       <main className="flex-grow container mx-auto py-8 px-4">
-        <h1 className="text-4xl font-extrabold text-center mb-10">Preguntas Frecuentes</h1>
+        <h1 className="text-4xl font-extrabold text-center mt-20 mb-10">Preguntas Frecuentes</h1>
 
         {/* Carrusel */}
         <Carousel />
