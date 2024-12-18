@@ -23,8 +23,8 @@ Actualmente, se encuentran disponibles dos plugins oficiales:
 >1. **Clonar el repositorio**:
 
 >   ```bash
->   git clone https://tu-repo-url.git
->   cd tu-nombre-proyecto
+>   git clone https://github.com/GrodoNV/sky-navigator/
+>   cd sky-navigator
 
 >[!NOTE]
 >Agradecimiento a UIverse , MagicUi y Shadcn

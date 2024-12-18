@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import flightData from '../utils/flights.json';
+import flights from '../utils/flights.json';
+
+const nationalCities = [
+  ...new Set(flights.national.flatMap((flight) => [flight.from, flight.to])),
+];
+const internationalCities = [
+  ...new Set(flights.international.flatMap((flight) => [flight.from, flight.to])),
+];
+const allCities = [...new Set([...nationalCities, ...internationalCities])];
 
 const SearchForm = ({ onClose, onSearch, isVisible }) => {
   const [formData, setFormData] = useState({
@@ -78,39 +87,47 @@ const SearchForm = ({ onClose, onSearch, isVisible }) => {
             </div>
           </div>
           <div className="form-group">
-            <label className="block mb-2 text-sm text-gray-400">Origen</label>
-            <input
-              type="text"
-              name="origin"
-              placeholder="Origen"
-              value={formData.origin}
-              onChange={(e) => handleInputChange('origin', e.target.value)}
-              list="originSuggestions"
-              className="form-input w-full"
-            />
-            <datalist id="originSuggestions">
-              {suggestions.origin.map((city, index) => (
-                <option key={index} value={city} />
-              ))}
-            </datalist>
-          </div>
-          <div className="form-group">
-            <label className="block mb-2 text-sm text-gray-400">Destino</label>
-            <input
-              type="text"
-              name="destination"
-              placeholder="Destino"
-              value={formData.destination}
-              onChange={(e) => handleInputChange('destination', e.target.value)}
-              list="destinationSuggestions"
-              className="form-input w-full"
-            />
-            <datalist id="destinationSuggestions">
-              {suggestions.destination.map((city, index) => (
-                <option key={index} value={city} />
-              ))}
-            </datalist>
-          </div>
+  <label htmlFor="origin" className="block mb-2 text-sm text-gray-400">
+    Origen
+  </label>
+  <input
+    id="origin"
+    type="text"
+    name="origin"
+    placeholder="Origen"
+    value={formData.origin}
+    onChange={(e) => handleInputChange('origin', e.target.value)}
+    list="originSuggestions"
+    className="form-input w-full"
+  />
+  <datalist id="originSuggestions">
+    {allCities.map((city, index) => (
+      <option key={index} value={city} />
+    ))}
+  </datalist>
+</div>
+
+<div className="form-group">
+  <label htmlFor="destination" className="block mb-2 text-sm text-gray-400">
+    Destino
+  </label>
+  <input
+    id="destination"
+    type="text"
+    name="destination"
+    placeholder="Destino"
+    value={formData.destination}
+    onChange={(e) => handleInputChange('destination', e.target.value)}
+    list="destinationSuggestions"
+    className="form-input w-full"
+  />
+  <datalist id="destinationSuggestions">
+    {allCities.map((city, index) => (
+      <option key={index} value={city} />
+    ))}
+  </datalist>
+</div>
+
           <div className="form-group">
             <label className="block mb-2 text-sm text-gray-400">Fecha de salida</label>
             <input

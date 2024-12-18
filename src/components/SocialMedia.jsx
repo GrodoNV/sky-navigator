@@ -4,7 +4,7 @@ const SocialMedia = () => {
   return (
     <ul className="example-2">
       <li className="icon-content">
-        <a href="https://linkedin.com/" aria-label="LinkedIn" data-social="linkedin">
+        <a href="https://www.linkedin.com/in/gabriel-rodrigo-nina-vargas-2b8825280/" aria-label="LinkedIn" data-social="linkedin">
           <div className="filled"></div>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
             <path
@@ -16,7 +16,7 @@ const SocialMedia = () => {
         <div className="tooltip">LinkedIn</div>
       </li>
       <li className="icon-content">
-        <a href="https://www.github.com/" aria-label="GitHub" data-social="github">
+        <a href="https://github.com/GrodoNV" aria-label="GitHub" data-social="github">
           <div className="filled"></div>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
             <path
@@ -28,7 +28,7 @@ const SocialMedia = () => {
         <div className="tooltip">GitHub</div>
       </li>
       <li className="icon-content">
-        <a href="https://www.instagram.com/" aria-label="Instagram" data-social="instagram">
+        <a href="https://www.instagram.com/g_rodrigonv/profilecard/?igsh=dXMyaWUzNjZ6MWk=" aria-label="Instagram" data-social="instagram">
           <div className="filled"></div>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-instagram" viewBox="0 0 16 16">
             <path
@@ -40,7 +40,7 @@ const SocialMedia = () => {
         <div className="tooltip">Instagram</div>
       </li>
       <li className="icon-content">
-        <a href="https://twitter.com/" aria-label="Twitter" data-social="twitter">
+        <a href=" https://twitter.com/grodrigonvargas?t=DjB_or_bIf0gprogX5-biw&s=35" aria-label="Twitter" data-social="twitter">
           <div className="filled"></div>
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-twitter" viewBox="0 0 16 16">
             <path
