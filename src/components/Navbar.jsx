@@ -12,33 +12,30 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="absolute top-7 left-20">
-      <div
-        className={`flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 py-4 max-w-[500px] mx-auto ${
-          isExpanded ? 'w-full' : 'w-16 sm:w-20 md:w-24 lg:w-28'
-        } transition-all duration-300 ease-in-out`}
-      >
-        {/* Hamburger Button */}
+    <nav className="navbar">
+      <div className=" navbar-container  flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 py-4">
+        {/* Logo */}
+        <div className="logo-container">
+          <img src="/logo.png" alt="SkyNav Logo" className="logo w-12 h-12" />
+        </div>
+
+        {/* Hamburger Button for Mobile */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="absolute right-40 top-4 p-2 text-white focus:outline-none md:hidden"
+          className="menu-button md:hidden p-2 text-white focus:outline-none"
         >
           {isExpanded ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Navigation items */}
-        <div
-          className={`flex items-center justify-around w-full ${
-            isExpanded ? 'block' : 'hidden md:flex'
-          } space-x-4 md:space-x-6`}
-        >
+        <div className={`nav-items flex items-center space-x-4 md:space-x-6 ${isExpanded ? 'block' : 'hidden md:flex'}`}>
           {navItems.map((item, index) => (
             <Link
               key={index}
               to={item.to}
-              className=" md:w-16 md:h-16 rounded-full  bg-transparent text-white transition-all duration-300 ease-in-out  hover:-translate-y-1 "
+              className="nav-item md:w-16 md:h-16 rounded-full bg-transparent text-white transition-all duration-300 ease-in-out hover:-translate-y-1 flex items-center justify-center"
             >
-              <item.icon size={23} className=" transition-transform duration-300 ease-in-out" />
+              <item.icon size={23} />
             </Link>
           ))}
         </div>

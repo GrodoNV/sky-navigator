@@ -43,19 +43,22 @@ const HomePage = () => {
       <Navbar />
       <main className="flex-grow bg-cover bg-center" style={{backgroundImage: 'url("https://w.wallhaven.cc/full/ym/wallhaven-ymlv8x.jpg")'}}>
         <div className="container mt-10 mb-10 mx-auto py-16 text-center flex flex-col items-center">
+          {/* Sky Navigator Text */}
+          <h1 className="text-[3rem] font-extrabold text-white mb-6">Sky Navigator</h1>
+
           <AnimatedPlane onClick={handlePlaneClick} />
-          <div className="w-full ">
+          
+          <div className="w-full">
             {showSearchForm && <SearchForm onClose={handleCloseSearchForm} onSearch={handleSearch} />}
             {isFormExpanded && (
               <div className="py-20">
-                <div className="flex justify-center mb-10 ">
-                <button 
-  onClick={toggleFlightList} 
-  className="w-[85%] bg-transparent border border-purple-950 text-white hover:bg-purple-900 hover:text-yellow-400 px-15 py-3 rounded-full shadow-lg transition-all duration-300"
->
-  {isFlightListVisible ? 'Ocultar Vuelos' : 'Mostrar Vuelos'}
-</button>
-
+                <div className="flex justify-center mb-10">
+                  <button 
+                    onClick={toggleFlightList} 
+                    className="w-[85%] bg-transparent border border-purple-950 text-white hover:bg-purple-900 hover:text-yellow-400 px-15 py-3 rounded-full shadow-lg transition-all duration-300"
+                  >
+                    {isFlightListVisible ? 'Ocultar Vuelos' : 'Mostrar Vuelos'}
+                  </button>
                 </div>
                 {isFlightListVisible && (
                   <div className="w-full">

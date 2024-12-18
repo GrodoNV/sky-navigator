@@ -99,7 +99,7 @@ const BookingForm = ({ onClose }) => {
     <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center left-0 items-start z-50 overflow-y-auto">
       <div className="w-full max-w-sm mx-auto my-4">
         {isSubmitting && (
-          <div className="absolute inset-0 bg-black bg-opacity-50 flex  items-center z-50">
+          <div className=" centrar absolute inset-0 bg-black bg-opacity-50 flex  items-center z-50">
             <Spinner />
           </div>
         )}
