@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-
+import Footer from '../components/Footer'
 const AboutUsPage = () => {
   const teamMembers = [
     {
@@ -30,7 +30,7 @@ const AboutUsPage = () => {
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-purple-900 to-indigo-900 py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Nuestra Historia</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mt-8 mb-6">Nuestra Historia</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto">
             Fundada en 2010, nuestra empresa nació con la visión de transformar desafíos en oportunidades, 
             combinando innovación tecnológica con un compromiso profundo hacia nuestros clientes.
@@ -105,6 +105,7 @@ const AboutUsPage = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

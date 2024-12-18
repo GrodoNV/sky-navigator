@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-white py-6 relative">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="relative lg:flex lg:justify-between lg:items-center lg:space-x-8">
-          <div className="backdrop-blur-md bg-white/10 p-3 rounded-full shadow-lg mx-auto lg:mx-0">
+          <div className="backdrop-blur-md bg-white/10 p-3 rounded-full shadow-lg mx-auto lg:mx-0 flex justify-center">
             <img
               src="/public/logo.png"
               alt="Company Logo"

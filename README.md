@@ -10,8 +10,9 @@ Actualmente, se encuentran disponibles dos plugins oficiales:
 ---
 
 ## Requisitos previos
+>[!NOTE]
+>Antes de comenzar, asegúrate de tener instalados los siguientes herramientas:
 
-Antes de comenzar, asegúrate de tener instalados los siguientes herramientas:
 
 1. **Node.js**: Vite requiere Node.js para ejecutarse.
    - Descarga e instala [Node.js](https://nodejs.org/).
