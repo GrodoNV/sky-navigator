@@ -10,6 +10,8 @@ Actualmente, se encuentran disponibles dos plugins oficiales:
 ---
 
 ## Requisitos previos
+>[!NOTE]
+>Antes de comenzar, asegúrate de tener instalados los siguientes herramientas:
 
 Antes de comenzar, asegúrate de tener instalados los siguientes herramientas:
 
