@@ -7,19 +7,19 @@ const AboutUsPage = () => {
       name: "Carlos Rodríguez",
       role: "Fundador & CEO",
       bio: "Con más de 15 años de experiencia en tecnología, Carlos ha liderado nuestra visión desde el principio.",
-      image: "https://randomuser.me/api/portraits/men/1.jpg"
+      image: "https://i1.sndcdn.com/artworks-000012658138-jgjuck-t500x500.jpg"
     },
     {
       name: "María González",
       role: "Directora de Operaciones",
       bio: "Experta en optimización de procesos y desarrollo estratégico.",
-      image: "https://randomuser.me/api/portraits/women/2.jpg"
+      image: "https://pbs.twimg.com/media/FuWkQ9EXwAMOmxu.png"
     },
     {
       name: "Luis Martínez",
       role: "Director de Tecnología",
       bio: "Innovador tecnológico con pasión por soluciones de vanguardia.",
-      image: "https://randomuser.me/api/portraits/men/3.jpg"
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTP0wS_EALQMXH7teWiD6xNL9g32jXq52ZcA&s"
     }
   ];
 
@@ -28,7 +28,7 @@ const AboutUsPage = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <div className="bg-gradient-to-br from-purple-900 to-indigo-900 py-20 px-4">
+      <div className="bg-gradient-to-br from-purple-900 to-indigo-900 py-20 px-4 custom-bg">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold mt-8 mb-6">Nuestra Historia</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto">

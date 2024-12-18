@@ -41,10 +41,10 @@ const HomePage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow bg-cover bg-center" style={{backgroundImage: 'url("https://w.wallhaven.cc/full/ym/wallhaven-ymlv8x.jpg")'}}>
+      <main className="flex-grow bg-cover bg-center fondoDisp" style={{ backgroundImage: 'url("/public/fondo1.jpeg")' }}>
         <div className="container mt-10 mb-10 mx-auto py-16 text-center flex flex-col items-center">
           {/* Sky Navigator Text */}
-          <h1 className="text-[3rem] font-extrabold text-white mb-6">Sky Navigator</h1>
+          <h1 className="text-[3rem] font-extrabold text-black mb-6">Sky Navigator</h1>
 
           <AnimatedPlane onClick={handlePlaneClick} />
           
